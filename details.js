@@ -27,12 +27,6 @@ var messages = [
 var images = [
   "url(https://i.imgur.com/g5oHbTh.jpg)",
   "url(https://i.pinimg.com/236x/86/43/18/8643180ae76e98edd8843049fe9ef6c8--free-vector-patterns-christmas-patterns.jpg)",
-  "url(https://i.imgur.com/9WnqUqh.jpg)",
-  "url(https://i.imgur.com/5BV2fav.jpg)",
-  "url(https://i.imgur.com/mgjYJ8z.jpg)",
-  "url(https://i.imgur.com/0vhPE7i.jpg)",
-  "url(https://i.imgur.com/74p1ckW.jpg)",
-  "url(https://i.imgur.com/mO0ecDJ.jpg)",
   "url(https://i.imgur.com/8rgXPf1.jpg)",
   "url(https://i.imgur.com/QWkio4i.jpg)",
   "url(https://i.imgur.com/OXvKs2D.jpg)",
@@ -45,8 +39,6 @@ var images = [
   "url(https://i.imgur.com/wxDGAxA.jpg)",
   "url(https://i.imgur.com/74p1ckW.jpg)",
   "url(https://i.imgur.com/mgjYJ8z.jpg)",
-  "url(https://i.imgur.com/g5oHbTh.jpg)",
   "url(https://i.imgur.com/0vhPE7i.jpg)",
   "url(https://i.imgur.com/mO0ecDJ.jpg)",
-  "url(https://i.imgur.com/g5oHbTh.jpg)"
 ];

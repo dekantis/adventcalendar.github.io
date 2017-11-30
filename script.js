@@ -1,4 +1,20 @@
 var currentDate = new Date();
+var n = 0;
+
+function getTimeRemaining(endtime) {
+  var t = Date.parse(endtime) - Date.parse(new Date());
+  var seconds = Math.floor((t / 1000) % 60);
+  var minutes = Math.floor((t / 1000 / 60) % 60);
+  var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+  var days = Math.floor(t / (1000 * 60 * 60 * 24));
+  return {
+    'total': t,
+    'days': days,
+    'hours': hours,
+    'minutes': minutes,
+    'seconds': seconds
+  };
+}
 
 function Door(day) {
 
@@ -13,7 +29,13 @@ function Door(day) {
 
     var innerNode = document.createElement("a");
     document.getElementById("door" + day).appendChild(innerNode);
-    node.style.cssText = "background-image: " + images[day - 1] + ";";
+
+    if (images.length >= day) {
+      node.style.cssText = "background-image: " + images[day - 1] + "; z-index: 9999;";
+    } else {
+      node.style.cssText = "background-image: " + images[n] + "; z-index: 9999;";
+      ++n;
+    };
     innerNode.innerHTML = day;
     innerNode.href = "#";
     // document.getElementById("door" + day).children().text(day);
@@ -21,7 +43,15 @@ function Door(day) {
     if ((currentDate.getMonth() + 1) < 12 || currentDate.getDate() < day) {
       innerNode.className = "disabled";
       innerNode.onclick = function() {
-        alert(`РАНО СУКА!`);
+
+        alert(
+          "Sorry. You can open the cell through: " +
+          getTimeRemaining("Dec " + day + " , 2017").days + " days " +
+          getTimeRemaining("Dec " + day + " , 2017").hours + " hours " +
+          getTimeRemaining("Dec " + day + " , 2017").minutes +
+          " minutes! Feel the holiday! Be happy!"
+        );
+
         return false;
       }
     } else {
@@ -32,8 +62,9 @@ function Door(day) {
       }
     }
   };
-
 }
+
+
 
 (function() {
   var doors = [];
