@@ -1,0 +1,66 @@
+body {
+  /*background-color: #021330;*/
+  background-image: url(https://i.imgur.com/lvyCUP4.png)
+}
+
+h1 {
+  text-align: center;
+  font-style: normal;
+  font-weight: bold;
+  font-family: monospace;
+  letter-spacing: 6px;
+  font-size: 50px;
+  color: #7c1313;
+  opacity: 0.8;
+  text-shadow: 2px 2px 6px rgba(150, 150, 150, 0.76);
+}
+
+article {
+  margin-top: 100px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+li {
+  display: inline-block;
+  align-items: center;
+}
+
+#adventDoors li {
+  height: 200px;
+  width: 200px;
+  border: solid 1px gray;
+  border-radius: 15px;
+  margin: 10px;
+  align: center;
+  display: inline-block;
+  opacity: 0.7;
+}
+
+#adventDoors li:hover {
+  opacity: 1;
+}
+
+.undertext {
+  color: gray;
+  text-align: center;
+  font-size: 12px;
+  font-family: monospace;
+  display: none;
+}
+
+a {
+  margin-bottom: 5px;
+  margin-top: 30px;
+  font-size: 100px;
+  font-weight: bold;
+  text-align: center;
+  color: #680d0d;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+}
